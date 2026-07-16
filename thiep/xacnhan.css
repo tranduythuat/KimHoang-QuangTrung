@@ -1456,10 +1456,81 @@ textarea {
   object-fit: cover;
 }
 
-/* Hiệu ứng xoay liên tục */
-.circle.spin {
-  animation: spin 1s linear infinite;
-  /* Xoay liên tục */
+
+/* music */
+.music-box {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+  z-index: 10000;
+  cursor: pointer;
+  isolation: isolate;
+}
+.music-box .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-origin: right center;
+  position: absolute;
+  right: 15%;
+  z-index: 1;
+  max-width: 320px;
+  width: 200%;
+  height: 100%;
+  overflow: hidden;
+}
+.music-box .label .musicLabel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  background-color: #fbf8f2;
+  color: #393934;
+  padding: 2% 10%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid #c0ad87;
+  opacity: 0.9;
+}
+.music-box .player {
+  max-width: 50px;
+  width: 100%;
+  aspect-ratio: 1;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.music-box .player #iconSvg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 2.8vw;
+  }
+  .music-box {
+    bottom: 2vw;
+  }
+  .music-box .label {
+    max-width: 60vw;
+  }
+  .music-box .label .musicLabel {
+    font-size: 2.2vw;
+  }
+  .music-box .player {
+    max-width: 10vw;
+  }
+}
+.spin {
+  animation: spin 4s linear infinite;
 }
 
 /* Định nghĩa hoạt ảnh xoay */
@@ -1467,14 +1538,10 @@ textarea {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
-
-
 
 /* ==========Animation=============== */
 
