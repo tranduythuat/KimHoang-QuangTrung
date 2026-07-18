@@ -25,10 +25,12 @@
     .album-anh,
     .in-fe,
     .in-fee,
+    .in-fee-en,
     .boxx-imgend p,
     .inp-ten,
     .form-group .subtitle,
     .box-dress .subtext,
+    .box-dress .subtext-en,
     textarea {
         font-size: calc((12 / 500) * 100vw);
     }

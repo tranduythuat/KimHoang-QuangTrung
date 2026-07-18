@@ -583,6 +583,13 @@ hr {
   font-family: var(--font-gotham-light);
   text-align: center;
   font-size: 12px;
+  margin-top: 2%;
+}
+
+.box-dress .subtext-en {
+  font-family: var(--font-gotham-light);
+  font-size: 12px;
+  text-align: center;
   margin-top: 10%;
 }
 
@@ -852,6 +859,11 @@ form {
   font-weight: 300;
   font-family: 'SVN-GothamLight';
   /* padding: 10px; */
+}
+
+.in-fee-en {
+  font-size: 12px;
+  font-family: 'SVN-GothamLight';
 }
 
 .in-fee {
@@ -1615,7 +1627,7 @@ textarea {
 
 .lb3.visible,
 .story-2.visible {
-  transform: translateX(0px);
+  transform: translateX(0px);subtext-en
   opacity: 1;
 } */
 
