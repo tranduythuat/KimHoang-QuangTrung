@@ -77,7 +77,7 @@
   --primary-color: rgb(121, 45, 38);
   --empty-box: rgb(76, 53, 44);
   --secondary-color: #F8F3ED;
-  --text-color: #111;
+  --text-color: #d2b876;
   --font-gotham: 'SVN-Gotham';
   --font-gotham-book: 'SVN-GothamBook';
   --font-gotham-bold: 'SVN-GothamBold';
@@ -111,7 +111,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #fffffc;
   color: var(--text-color);
 }
 
@@ -389,7 +389,7 @@ hr {
   font-family: var(--font-gotham);
   max-width: 300px;
   width: 100%;
-  background-color: #34393D;
+  background-color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -981,6 +981,7 @@ form {
 }
 
 .inp-ten {
+  outline: none;
   width: 400px;
   height: 30px;
   text-align: left;
@@ -994,7 +995,12 @@ form {
   background: none;
 }
 
+.inp-ten::placeholder, textarea::placeholder {
+  color: var(--text-color);
+}
+
 textarea {
+  outline: none;
   width: 400px;
   height: 100px;
   text-align: left;
@@ -1106,13 +1112,15 @@ textarea {
 }
 
 .guest {
+  outline: none;
   width: 100px;
   align-items: center;
   text-align: center;
   border-radius: 20px;
   margin: 0 10px;
-  border: 1px solid var(--text-color);
+  border: 2px solid var(--text-color);
   background-color: transparent;
+  color: var(--text-color);
 }
 
 /* FAQS ================= */
