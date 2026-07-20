@@ -543,7 +543,7 @@ hr {
   color: white;
 }
 .album .content .swiper .swiper-pagination-bullet-active {
-  background: #34393d;
+  background: var(--text-color);
 }
 .album .content .swiper .swiper-pagination-bullet {
   width: 16px;
