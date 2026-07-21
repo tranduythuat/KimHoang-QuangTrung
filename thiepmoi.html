@@ -56,7 +56,7 @@
                 <label for="" class="lb55"><i>/Thời gian & Địa điểm/</i></label>
                 <lb class="dot"><i class="fa-solid fa-diamond"></i></lb>
                 <img src="thiep/images/maplogo.png" class="map-logo" data-aos="flip-left" alt="">
-                <label for="" class="lb6" data-aos="fade-up">JW Marriott Saigon </label>
+                <label for="" class="lb6" data-aos="fade-up"> <span class="jw">JW</span> Marriott <br> <span class="saigon">Saigon</span></label>
                 <!-- <label for="" class="fade-up lb7">Sảnh: Saigon River House</label> -->
                 <!-- <label for="" class="fade-up lb77">Reception Hall: Saigon River House</label> -->
                 <label for="" class="church" data-aos="fade-up">Góc đường Hai Bà Trưng và Lê Duẩn, Phường Sài Gòn , TPHCM</label>
@@ -230,8 +230,7 @@
                         <img src="./thiep/images/g2781.png" alt="" />
                     </div>
                     <p>
-                        I choose you today everyday and in every lifetime <br>
-                        I'll choose you only you
+                        Even when I’m 80 <br> I’ll never forget how my heart loved you at 18
                     </p>
                     <div class="img-story">
                         <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/KimHoang-QuangTrung/000045_(2).webp"
@@ -243,8 +242,7 @@
                         <img src="./thiep/images/g2781.png" alt="" />
                     </div>
                     <p>
-                        The best day is nothing more than: <br>
-                        You are noisy, I am smiling, so warm to live my life
+                        Loved you yesterday, <br> love you still, always have, always will.
                     </p>
                     <div class="img-story">
                         <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/KimHoang-QuangTrung/194_DSC_9791.webp" style="object-position: 40% 50%;"
@@ -267,7 +265,7 @@
                 <lb class="dot2"><i class="fa-solid fa-diamond"></i></lb>
             </div>
             <div class="box-form">
-                <form action="" name="bui-thai">
+                <form action="" name="kimhoang-quangtrung">
                     <div class="feed-info">
                         <label for="" class="lb-form">Attendance confirmation</label>
                         <label for="" class="lb-formm"><i>/Xác nhận tham dự/</i></label>
@@ -537,8 +535,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        const scripConfirmtURL = '?sheet=confirm';
-        const form = document.forms["bui-thai"];
+        const scripConfirmtURL = 'https://script.google.com/macros/s/AKfycbwTh4jlnVswTyXv15tSlqqTZhB33cOBEl6r_WOLNeFhhiFPj9-6Xk1EPPflFb0kkHR9/exec?sheet=confirm';
+        const form = document.forms["kimhoang-quangtrung"];
 
         form.addEventListener('submit', e => {
             e.preventDefault(); // Ngừng việc gửi form mặc định
@@ -553,7 +551,7 @@
             // const dietary = data.VEGETARIAN;
             const guest_number = data.GUEST;
             // const stay = data.stay_overnight ?? "";
-            // const wish = data.WISH;
+            const wish = data.WISH;
 
             // Gửi dữ liệu form đi
             fetch(scripConfirmtURL, {
@@ -564,7 +562,7 @@
                     // dietary,
                     guest_number,
                     // stay,
-                    // wish
+                    wish
                 })
             })
                 .then(response => {

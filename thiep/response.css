@@ -51,6 +51,15 @@
         font-size: calc((20 / 500) * 100vw);
     }
 
+    .lb6 .saigon {
+        font-size: calc((20 / 500) * 100vw);
+        letter-spacing: calc((1 / 500) * 100vw);
+    }
+
+    .lb6 .jw {
+        letter-spacing: calc((3 / 500) * 100vw);
+    }
+
     .box-content .wife,
     .box-content .husband {
         font-size: calc((25 / 500) * 100vw);
