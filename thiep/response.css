@@ -6,8 +6,8 @@
     }
 
     .box-timeline .events .event:nth-of-type(2) .icon {
-         width: calc((56 / 500) * 100vw);
-    } 
+        width: calc((56 / 500) * 100vw);
+    }
 
     .lb44,
     .church,
@@ -85,7 +85,7 @@
 
 
     .map-logo {
-        max-width: calc((50 / 500) * 100vw);
+        max-width: calc((270 / 500) * 100vw);
     }
 
     .lb6 {
